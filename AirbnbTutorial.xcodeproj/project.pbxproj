@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6C0FD082CB6DC8B00E8CF3D /* DestinationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C0FD072CB6DC8B00E8CF3D /* DestinationSearchView.swift */; };
 		D6D1183E2CB42A0C007B2945 /* AirbnbTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D1183D2CB42A0C007B2945 /* AirbnbTutorialApp.swift */; };
 		D6D118402CB42A0C007B2945 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D1183F2CB42A0C007B2945 /* ContentView.swift */; };
 		D6D118422CB42A12007B2945 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D118412CB42A12007B2945 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D6C0FD072CB6DC8B00E8CF3D /* DestinationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationSearchView.swift; sourceTree = "<group>"; };
 		D6D1183A2CB42A0C007B2945 /* AirbnbTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirbnbTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D1183D2CB42A0C007B2945 /* AirbnbTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbTutorialApp.swift; sourceTree = "<group>"; };
 		D6D1183F2CB42A0C007B2945 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				D6D118572CB42CE7007B2945 /* ExploreView.swift */,
 				D6D1185B2CB438F2007B2945 /* SearchAndFilterBar.swift */,
+				D6C0FD072CB6DC8B00E8CF3D /* DestinationSearchView.swift */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				D6D1185A2CB42E4D007B2945 /* ListingItemView.swift in Sources */,
 				D6D118632CB44243007B2945 /* RatingView.swift in Sources */,
 				D6D118582CB42CE7007B2945 /* ExploreView.swift in Sources */,
+				D6C0FD082CB6DC8B00E8CF3D /* DestinationSearchView.swift in Sources */,
 				D6D1185C2CB438F2007B2945 /* SearchAndFilterBar.swift in Sources */,
 				D6D1185E2CB43EA0007B2945 /* ListingDetailView.swift in Sources */,
 				D6D1183E2CB42A0C007B2945 /* AirbnbTutorialApp.swift in Sources */,

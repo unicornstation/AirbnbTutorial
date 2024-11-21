@@ -10,12 +10,12 @@ import MapKit
 
 struct ListingDetailView: View {
     
-    var images = [
-        "pool_h1",
-        "room_h1",
-        "beach_h1",
-        "restaurant_h1"
-    ]
+//    var images = [
+//        "pool_h1",
+//        "room_h1",
+//        "beach_h1",
+//        "restaurant_h1"
+//    ]
     
     @Environment(\.dismiss) var dismiss
     
@@ -166,6 +166,7 @@ struct ListingDetailView: View {
             }
             .padding()
         }
+        .toolbar(.hidden, for: .tabBar)
         .ignoresSafeArea()
         .padding(.bottom, 64)
         .overlay(alignment: .bottom) {

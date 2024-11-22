@@ -16,6 +16,7 @@ struct ExploreView: View {
         NavigationStack {
             
             if showDestinationSearchView {
+                
                 DestinationSearchView(show: $showDestinationSearchView)
             } else {
                 

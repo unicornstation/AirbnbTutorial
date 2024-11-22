@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct RatingView: View {
+    
+    let listing: Listing
+    
     var body: some View {
         VStack(alignment: .leading) {
             HStack(spacing: 2) {
                 Image(systemName: "star.fill")
                 
-                Text("4.86")
+                Text("\(listing.rating)")
                 
                 Text(" - ")
                 
@@ -23,12 +26,12 @@ struct RatingView: View {
             }
             .foregroundStyle(.black)
             
-            Text("Kho Chang, Thailand")
+            Text("\(listing.city), \(listing.state)")
         }
         .font(.caption)
     }
 }
 
 #Preview {
-    RatingView()
+    RatingView(listing: DeveloperPreview.shared.listings[0])
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D60401152CF0D7ED00760289 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60401142CF0D7ED00760289 /* ExploreViewModel.swift */; };
+		D60401172CF0D8CC00760289 /* ExploreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60401162CF0D8CC00760289 /* ExploreService.swift */; };
 		D67B37622CEF6CE5007D523D /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B37612CEF6CE5007D523D /* Listing.swift */; };
 		D67B37642CF0C49C007D523D /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B37632CF0C49B007D523D /* DeveloperPreview.swift */; };
 		D6C0FD082CB6DC8B00E8CF3D /* DestinationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C0FD072CB6DC8B00E8CF3D /* DestinationSearchView.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D60401142CF0D7ED00760289 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		D60401162CF0D8CC00760289 /* ExploreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreService.swift; sourceTree = "<group>"; };
 		D67B37612CEF6CE5007D523D /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
 		D67B37632CF0C49B007D523D /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
 		D6C0FD072CB6DC8B00E8CF3D /* DestinationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationSearchView.swift; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 		D67B37652CF0D3E3007D523D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D60401142CF0D7ED00760289 /* ExploreViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -97,6 +102,7 @@
 		D67B37672CF0D3EC007D523D /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				D60401162CF0D8CC00760289 /* ExploreService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -329,6 +335,8 @@
 				D6CCCED92CB82BEC00A36554 /* ProfileView.swift in Sources */,
 				D6D1185A2CB42E4D007B2945 /* ListingItemView.swift in Sources */,
 				D6D118632CB44243007B2945 /* RatingView.swift in Sources */,
+				D60401152CF0D7ED00760289 /* ExploreViewModel.swift in Sources */,
+				D60401172CF0D8CC00760289 /* ExploreService.swift in Sources */,
 				D6D118582CB42CE7007B2945 /* ExploreView.swift in Sources */,
 				D67B37622CEF6CE5007D523D /* Listing.swift in Sources */,
 				D6CCCEDF2CB834BB00A36554 /* ButtonLoginView.swift in Sources */,

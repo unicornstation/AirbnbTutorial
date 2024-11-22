@@ -10,19 +10,13 @@ import MapKit
 
 struct ListingDetailView: View {
     
-//    var images = [
-//        "pool_h1",
-//        "room_h1",
-//        "beach_h1",
-//        "restaurant_h1"
-//    ]
-    
     @Environment(\.dismiss) var dismiss
+    let listing: Listing
     
     var body: some View {
         ScrollView {
             ZStack(alignment: .topLeading) {
-                ListingImageCarouselView()
+                ListingImageCarouselView(listing: listing)
                     .frame(height: 320)
                 
                 Button(action: {
@@ -41,11 +35,11 @@ struct ListingDetailView: View {
             }
             
             VStack(alignment: .leading, spacing: 8) {
-                Text("Paradise Villa")
+                Text(listing.title)
                     .font(.title)
                     .fontWeight(.semibold)
                 
-                RatingView()
+                RatingView(listing: listing)
                 
             }
             .padding(.leading)
@@ -56,15 +50,15 @@ struct ListingDetailView: View {
             // host into view
             HStack {
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("Entire villa hosted by John Smith")
+                    Text("Entire \(listing.type.description) hosted by \(listing.ownerName)")
                         .font(.headline)
                         .frame(width: 250, alignment: .leading)
                     
                     HStack(spacing: 2) {
-                        Text("4 guests -")
-                        Text("4 bedrooms -")
-                        Text("4 beds -")
-                        Text("3 baths")
+                        Text("\(listing.numberOfGuests) guests -")
+                        Text("\(listing.numberOfBedrooms) bedrooms -")
+                        Text("\(listing.numberOfBeds) beds -")
+                        Text("\(listing.numberOfBathrooms) baths")
                     }
                     .font(.caption)
                 }
@@ -72,7 +66,7 @@ struct ListingDetailView: View {
                 
                 Spacer()
                 
-                Image("man")
+                Image(listing.ownerImageUrl)
                     .resizable()
                     .scaledToFill()
                     .frame(width: 64, height: 64)
@@ -211,5 +205,5 @@ struct ListingDetailView: View {
 }
 
 #Preview {
-    ListingDetailView()
+    ListingDetailView(listing: DeveloperPreview.shared.listings[0])
 }
